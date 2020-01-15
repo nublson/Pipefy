@@ -6,7 +6,7 @@ const Card = () => {
     return (
         <Container>
             <header>
-                <Label color="#7159c1" />
+                <Label color="#3b5bfd" />
             </header>
             <p>Fazer migração completa de servcidor</p>
             <img

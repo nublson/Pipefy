@@ -7,7 +7,7 @@ module.exports = {
         {
             resolve: `gatsby-plugin-nprogress`,
             options: {
-                color: `#7159c1`,
+                color: `#3b5bfd`,
                 showSpinner: false,
             },
         },
@@ -19,7 +19,7 @@ module.exports = {
                 short_name: `Pipefy`,
                 start_url: `/`,
                 background_color: `#ecf1f8`,
-                theme_color: `#7159c1`,
+                theme_color: `#3b5bfd`,
                 display: `standalone`,
                 icon: `./src/img/pipefy.png`,
             },

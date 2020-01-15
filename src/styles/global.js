@@ -1,7 +1,7 @@
 import { createGlobalStyle } from "styled-components"
 
 export default createGlobalStyle`
-    @import url('https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap');
+    @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
     *,
     *:before,
@@ -24,7 +24,8 @@ export default createGlobalStyle`
 
     body{
         box-sizing: border-box;
-        font: 1.4rem 'Roboto', sans-serif;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.4rem;
         background: #ecf1f8;
         color: #333;
         -webkit-font-smoothing: antialiased !important;

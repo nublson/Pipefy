@@ -5,22 +5,22 @@ import Card from "../Card"
 
 import { Container } from "./styles"
 
-const List = () => {
+const List = ({ data }) => {
     return (
         <Container>
             <header>
-                <h2>Tarefas</h2>
-                <button type="button">
-                    <MdAdd size={24} color="#fff" />
-                </button>
+                <h2>{data.title}</h2>
+                {data.creatable && (
+                    <button type="button">
+                        <MdAdd size={24} color="#fff" />
+                    </button>
+                )}
             </header>
 
             <ul>
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
+                {data.cards.map(card => (
+                    <Card key={card.id} data={card} />
+                ))}
             </ul>
         </Container>
     )

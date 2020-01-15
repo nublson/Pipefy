@@ -8,4 +8,9 @@ export const Container = styled.div`
 
     display: flex;
     align-items: center;
+
+    img {
+        width: 9rem;
+        height: 3rem;
+    }
 `

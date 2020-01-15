@@ -7,7 +7,7 @@ import { Container } from "./styles"
 
 const List = ({ data }) => {
     return (
-        <Container>
+        <Container done={data.done}>
             <header>
                 <h2>{data.title}</h2>
                 {data.creatable && (
